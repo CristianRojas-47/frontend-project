@@ -1,6 +1,6 @@
 interface IHeaderLink {
   label: string;
-  path: string;
+  to: string;
 }
 
 export type { IHeaderLink };

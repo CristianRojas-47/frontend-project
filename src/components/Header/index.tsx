@@ -1,25 +1,41 @@
-import { StyledHeader, StyledContainer, StyledPrincipal } from "./styles";
-import { IHeaderLink } from "./types";
+import { useLocation } from "react-router-dom";
+import { IHeaderLink } from "./utils";
+import {
+  StyledBrand,
+  StyledContainer,
+  StyledDate,
+  StyledHeader,
+  StyledLink,
+  StyledPrincipal,
+  StyledSection,
+} from "./styles";
 
 interface HeaderProps {
   title: string;
-  links?: IHeaderLink[];
+  links: IHeaderLink[];
   date: string;
 }
 
 function Header(props: HeaderProps) {
   const { title, links, date } = props;
+  const location = useLocation();
+
+  const filteredLinks = links.filter((link) => location.pathname !== link.to);
 
   return (
     <StyledHeader>
       <StyledContainer>
-        <p>{date}</p>
+        <StyledDate>{date}</StyledDate>
       </StyledContainer>
       <StyledPrincipal>
-        <h1>{title}</h1>
-        <div>
-          {links && links.map((link, index) => <p key={index}>{link.label}</p>)}
-        </div>
+        <StyledBrand>{title}</StyledBrand>
+        <StyledSection>
+          {filteredLinks.map((link) => (
+            <StyledLink key={link.label} to={link.to}>
+              {link.label}
+            </StyledLink>
+          ))}
+        </StyledSection>
       </StyledPrincipal>
     </StyledHeader>
   );

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Header } from "../Header/index";
-import { StyledMain, StyledPage } from "./styles";
-import { IHeaderLink } from "../Header/types";
 import { Footer } from "../Footer";
+import { Header } from "../Header/index";
+import { IHeaderLink } from "../Header/utils";
+import { StyledMain, StyledPage } from "./styles";
 
 interface LayoutProps {
-  links?: IHeaderLink[];
+  links: IHeaderLink[];
 }
 
 function Layout(props: LayoutProps) {
