@@ -1,4 +1,4 @@
-import { StyledFooter } from "./styles";
+import { StyledFooter, StyledTitle, StyledObservation } from "./styles";
 
 interface FooterProps {
   title: string;
@@ -10,8 +10,8 @@ function Footer(props: FooterProps) {
 
   return (
     <StyledFooter>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <StyledTitle>{title}</StyledTitle>
+      <StyledObservation>{description}</StyledObservation>
     </StyledFooter>
   );
 }

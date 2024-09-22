@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledHeader = styled.div`
   width: 100%;
@@ -14,12 +15,12 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
 
-  & p {
-    color: #f8f9f9;
-    font-size: large;
-    font-weight: 600;
-  }
+const StyledDate = styled.p`
+  color: #f8f9f9;
+  font-size: 12px;
+  font-weight: 300;
 `;
 
 const StyledPrincipal = styled.div`
@@ -28,29 +29,40 @@ const StyledPrincipal = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 24px 48px;
-
-  & h1 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #22303d;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    align-items: center;
-  }
-
-  & div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-
-  & p {
-    font-size: 14px;
-    font-weight: 500;
-    color: #22303d;
-  }
 `;
 
-export { StyledHeader, StyledContainer, StyledPrincipal };
+const StyledBrand = styled.h1`
+  font-size: 24px;
+  font-weight: 600;
+  color: #22303d;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+`;
+
+const StyledSection = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #22303d;
+`;
+
+export {
+  StyledHeader,
+  StyledContainer,
+  StyledDate,
+  StyledPrincipal,
+  StyledBrand,
+  StyledSection,
+  StyledLink,
+};
