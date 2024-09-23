@@ -11,7 +11,6 @@ import { Contact } from "./pages/contact";
 
 const headerLinks = [
   { label: "Home", to: "/" },
-  { label: "Nosotros", to: "/about" },
   { label: "Contacto", to: "/contact" },
   { label: "login", to: "/login" },
   { label: "Registro", to: "/registration" },
