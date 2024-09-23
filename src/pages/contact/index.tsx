@@ -1,39 +1,75 @@
-import { StyledContainer, StyledTitle } from "./styles";
+import {
+  StyledContainer,
+  StyledTitle,
+  StyledForm,
+  StyledInput,
+  StyledRow,
+  StyledTextarea,
+  StyledbuttonA,
+  StyledContainerButtons,
+  StyledbuttonB,
+} from "./styles";
 
 function Contact() {
-    return (
-        <StyledContainer>
-            <StyledTitle>Contacto</StyledTitle>
-            <form>
-                <div>
-                    <label htmlFor="fullName">Nombres y Apellido:</label>
-                    <input type="text" id="fullName" name="fullName" required />
-                </div>
-                <div>
-                    <label htmlFor="phone">Teléfono:</label>
-                    <input type="tel" id="phone" name="phone" required />
-                </div>
-                <div>
-                    <label htmlFor="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div>
-                    <label htmlFor="city">Ciudad:</label>
-                    <input type="text" id="city" name="city" required />
-                </div>
-                <div>
-                    <label htmlFor="queryDescription">Describe la consulta que deseas realizar:</label>
-                    <textarea id="queryDescription" name="queryDescription" required></textarea>
-                </div>
-                <div>
-                    <label htmlFor="additionalInfo">Información Adicional:</label>
-                    <input type="text" id="additionalInfo" name="additionalInfo" />
-                </div>
-                <button type="reset">Cancelar</button>
-                <button type="submit">Enviar</button>
-            </form>
-        </StyledContainer>
-    );
+  return (
+    <StyledContainer>
+      <StyledTitle>Contacto</StyledTitle>
+      <StyledForm>
+        <StyledRow>
+          <StyledInput
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Nombres y Apellidos*"
+            required
+          />
+          <StyledInput
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Teléfono*"
+            required
+          />
+        </StyledRow>
+        <StyledRow>
+          <StyledInput
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Correo Electrónico*"
+            required
+          />
+          <StyledInput
+            type="text"
+            id="city"
+            name="city"
+            placeholder="Ciudad"
+            required
+          />
+        </StyledRow>
+        <StyledRow>
+          <StyledTextarea
+            id="queryDescription"
+            name="queryDescription"
+            placeholder="Describe la consulta que deseas realizar"
+            required
+          ></StyledTextarea>
+        </StyledRow>
+        <StyledRow>
+          <StyledInput
+            type="text"
+            id="additionalInfo"
+            name="additionalInfo"
+            placeholder="Información Adicional"
+          />
+        </StyledRow>
+      </StyledForm>
+      <StyledContainerButtons>
+        <StyledbuttonA type="reset">Cancelar</StyledbuttonA>
+        <StyledbuttonB type="submit">Enviar</StyledbuttonB>
+      </StyledContainerButtons>
+    </StyledContainer>
+  );
 }
 
 export { Contact };
