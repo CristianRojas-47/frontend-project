@@ -20,7 +20,9 @@ function Header(props: HeaderProps) {
   const { title, links, date } = props;
   const location = useLocation();
 
-  const filteredLinks = links.filter((link) => location.pathname !== link.to);
+  const filteredLinks = links
+    .filter((link) => location.pathname !== link.to)
+    .sort((a, b) => a.label.localeCompare(b.label));
 
   return (
     <StyledHeader>
