@@ -8,12 +8,17 @@ const StyledUl = styled.ul`
   justify-content: center;
   padding: 48px 32px;
 
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 20px;
+    padding: 24px 16px;
+  }
+
   @media (max-width: 580px) {
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 32px;
+    padding: 24px 16px;
   }
 `;
 
@@ -28,8 +33,13 @@ const StyledImg = styled.img`
   width: 230px;
   height: 345px;
 
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 300px;
+  }
+
   @media (max-width: 580px) {
-    width: 300px;
+    width: 100%;
     height: auto;
   }
 `;
@@ -39,6 +49,14 @@ const StyledName = styled.h2`
   font-weight: 500;
   text-align: center;
   color: #566573;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 580px) {
+    font-size: 16px;
+  }
 `;
 
 const StyledLink = styled(Link)`
