@@ -15,7 +15,7 @@ import { Registration } from "./pages/Registration";
 const headerLinks = [
   { label: "Home", to: "/" },
   { label: "Contacto", to: "/contact" },
-  { label: "Login", to: "/login" },
+  { label: "Iniciar Sesión", to: "/login" },
   { label: "Registro", to: "/registration" },
   { label: "Comentarios", to: "/comments" },
   { label: "Administración", to: "/administration" },
