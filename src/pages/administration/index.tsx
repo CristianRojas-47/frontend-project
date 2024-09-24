@@ -1,3 +1,4 @@
+// Import styled components and necessary icons for the managing users
 import {
   StyledContainer,
   StyledTitle,
@@ -10,6 +11,7 @@ import {
 } from "./styles";
 import { MdDelete, MdEdit } from "react-icons/md";
 
+// UserManagement component renders a table for managing users
 function UserManagement() {
   return (
     <StyledContainer>
