@@ -1,0 +1,4 @@
+const apiToken =
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2OTZmNzQwNTAzMWIyZGJlYTUxNzU1OWJiMjFmOGE4ZiIsInN1YiI6IjYxZWFlYzViZWEzN2UwMDAxYjc1Y2FlZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jPsGYLGHLNKC5y1lyHx4-siA6-XVO9O3Iku6W_oax60";
+
+export { apiToken };
