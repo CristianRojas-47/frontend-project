@@ -14,6 +14,7 @@ import { UserManagement } from "./pages/administration";
 import { Comments } from "./pages/comments";
 import { Registration } from "./pages/Registration";
 
+// Array of header links to be used in the Layout for navigation
 const headerLinks = [
   { label: "Home", to: "/" },
   { label: "Contacto", to: "/contact" },
@@ -23,6 +24,7 @@ const headerLinks = [
   { label: "Administración", to: "/administration" },
 ];
 
+// Router configuration using React Router
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -40,6 +42,7 @@ const router = createBrowserRouter(
   )
 );
 
+// Main application component
 function App() {
   return (
     <>

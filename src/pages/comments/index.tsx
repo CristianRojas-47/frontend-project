@@ -1,3 +1,4 @@
+// Import styled components and necessary icons for comments
 import movie from "../../assets/movie.avif";
 import {
   StyledContainer,
@@ -11,6 +12,7 @@ import {
   StyledImage,
 } from "./styles";
 
+// Comments component renders a section about the platform and user comments
 function Comments() {
   return (
     <>
@@ -22,14 +24,14 @@ function Comments() {
           <StyledAboutSection>
             <StyledTitle>¿Quiénes somos?</StyledTitle>
             <StyledAboutText>
-              En CineScout, creemos que el cine tiene
-              la capacidad de transformar vidas, conectar culturas y abrirnos a
-              nuevas formas de pensar. Por eso hemos creado una plataforma que
-              te permite descubrir películas más allá de los grandes estrenos,
-              explorando títulos independientes, clásicos olvidados y
-              recomendaciones únicas adaptadas a tus gustos. Nuestro equipo está
-              compuesto por expertos y apasionados del cine que quieren hacer de
-              tu experiencia cinematográfica algo especial. Aquí tienes varios
+              En CineScout, creemos que el cine tiene la capacidad de
+              transformar vidas, conectar culturas y abrirnos a nuevas formas de
+              pensar. Por eso hemos creado una plataforma que te permite
+              descubrir películas más allá de los grandes estrenos, explorando
+              títulos independientes, clásicos olvidados y recomendaciones
+              únicas adaptadas a tus gustos. Nuestro equipo está compuesto por
+              expertos y apasionados del cine que quieren hacer de tu
+              experiencia cinematográfica algo especial. Aquí tienes varios
               textos con dos párrafos para la sección ¿Quiénes somos?: Opción 1:
               En CineScout, creemos que el cine tiene la capacidad de
               transformar vidas, conectar culturas y abrirnos a nuevas formas de
