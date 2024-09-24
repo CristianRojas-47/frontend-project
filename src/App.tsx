@@ -10,6 +10,7 @@ import { Home } from "./pages/home";
 import { Contact } from "./pages/contact";
 import { Login } from "./pages/login";
 import { Details } from "./pages/details";
+import { Comments } from "./pages/comments";
 
 const headerLinks = [
   { label: "Home", to: "/" },
@@ -28,7 +29,7 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<></>} />
-        <Route path="/comments" element={<></>} />
+        <Route path="/comments" element={<Comments />} />
         <Route path="/administration" element={<></>} />
         <Route path="/movies/:movieId" element={<Details />} />
       </Route>
