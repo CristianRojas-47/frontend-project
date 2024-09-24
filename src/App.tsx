@@ -10,6 +10,7 @@ import { Home } from "./pages/home";
 import { Contact } from "./pages/contact";
 import { Login } from "./pages/login";
 import { Details } from "./pages/details";
+import { UserManagement } from "./pages/administration";
 
 const headerLinks = [
   { label: "Home", to: "/" },
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<></>} />
         <Route path="/comments" element={<></>} />
-        <Route path="/administration" element={<></>} />
+        <Route path="/administration" element={<UserManagement />} />
         <Route path="/movies/:movieId" element={<Details />} />
       </Route>
     </>
