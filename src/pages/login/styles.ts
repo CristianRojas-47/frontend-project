@@ -4,9 +4,12 @@ const StyledContainer = styled.div`
   display: flex;
   padding: 48px 120px;
   justify-content: space-between;
-  justify-items: center;
   align-items: center;
-  justify-self: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 24px;
+  }
 `;
 
 const StyledContainerSection = styled.div`
@@ -15,12 +18,23 @@ const StyledContainerSection = styled.div`
   max-width: 740px;
   height: 680px;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 `;
 
 const StyledTitle = styled.h1`
   font-size: 48px;
   font-weight: 400;
   color: #212f3c;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    text-align: center;
+  }
 `;
 
 const StyledImg = styled.img`
@@ -28,10 +42,14 @@ const StyledImg = styled.img`
   box-shadow: 2px 2px 4px #343434;
   max-width: 740px;
   height: auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
 `;
 
 const StyledCard = styled.div`
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,6 +59,12 @@ const StyledCard = styled.div`
   background-color: #eeeeee;
   border-radius: 20px;
   padding: 64px 32px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+  }
 `;
 
 const StyledContainerButtons = styled.div`
@@ -49,6 +73,11 @@ const StyledContainerButtons = styled.div`
   justify-content: flex-end;
   gap: 12px;
   width: 80%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 8px;
+  }
 `;
 
 const StyledbuttonA = styled.button`
@@ -60,6 +89,11 @@ const StyledbuttonA = styled.button`
   border-color: #212f3c;
   color: #212f3c;
   border: none;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px;
+  }
 `;
 
 const StyledbuttonB = styled.button`
@@ -70,6 +104,11 @@ const StyledbuttonB = styled.button`
   color: #fff;
   font-weight: 600;
   border: none;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px;
+  }
 `;
 
 const StyledForm = styled.form`
@@ -88,11 +127,20 @@ const StyledInput = styled.input`
   padding: 8px 16px;
   border: none;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 `;
 
 const StyledLabel = styled.label`
-font-size: 16px;
-padding-left: 12px;
+  font-size: 16px;
+  padding-left: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export {

@@ -27,11 +27,15 @@ function UserManagement() {
         <tbody>
           {[...Array(6)].map((_, index) => (
             <StyledTableRow key={index}>
-              <StyledTableData>{index + 1}</StyledTableData>
-              <StyledTableData>Nombre {index + 1}</StyledTableData>
-              <StyledTableData>usuario{index + 1}@email.com</StyledTableData>
-              <StyledTableData>Usuario</StyledTableData>
-              <StyledTableData>
+              <StyledTableData data-label="ID.">{index + 1}</StyledTableData>
+              <StyledTableData data-label="Nombre">
+                Nombre {index + 1}
+              </StyledTableData>
+              <StyledTableData data-label="Correo electrónico">
+                usuario{index + 1}@email.com
+              </StyledTableData>
+              <StyledTableData data-label="Rol">Usuario</StyledTableData>
+              <StyledTableData data-label="Acciones">
                 <StyledActionContainer>
                   <StyledActionButton>
                     <MdDelete size="20px" color="red" />

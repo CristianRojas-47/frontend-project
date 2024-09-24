@@ -29,6 +29,12 @@ const StyledPrincipal = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 24px 48px;
+
+  @media (max-width: 768px) {
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const StyledBrand = styled.h1`
@@ -46,6 +52,15 @@ const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap; 
+
+  @media (max-width: 768px) {
+    gap: 20px; 
+  }
+
+  @media (max-width: 480px) {
+    gap: 10px;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -55,6 +70,10 @@ const StyledLink = styled(Link)`
   font-size: 14px;
   font-weight: 500;
   color: #22303d;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 export {

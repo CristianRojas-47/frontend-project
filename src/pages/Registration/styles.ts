@@ -7,6 +7,10 @@ const StyledContainer = styled.div`
   justify-items: center;
   align-items: center;
   justify-self: center;
+
+  @media (max-width: 768px) {
+    padding: 24px 16px;
+  }
 `;
 
 const StyledCard = styled.div`
@@ -19,6 +23,11 @@ const StyledCard = styled.div`
   padding: 32px;
   width: 360px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 24px;
+  }
 `;
 
 const StyledForm = styled.form`
@@ -31,6 +40,10 @@ const StyledContainerInput = styled.div`
   flex-direction: column;
   gap: 4px;
   padding: 8px 0;
+
+  @media (max-width: 768px) {
+    padding: 6px 0;
+  }
 `;
 
 const StyledInput = styled.input`
@@ -38,12 +51,21 @@ const StyledInput = styled.input`
   padding: 8px 16px;
   border: none;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 `;
 
 const StyledLabel = styled.label`
   font-size: 16px;
   padding-left: 8px;
   color: #333;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const StyledbuttonB = styled.button`
@@ -56,6 +78,11 @@ const StyledbuttonB = styled.button`
   border: none;
   cursor: pointer;
   width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 `;
 
 export {
