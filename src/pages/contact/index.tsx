@@ -1,3 +1,4 @@
+// Import styled components and necessary icons for contact
 import {
   StyledContainer,
   StyledTitle,
@@ -10,6 +11,7 @@ import {
   StyledbuttonB,
 } from "./styles";
 
+// Contact component renders a form that allows users to send inquiries
 function Contact() {
   return (
     <StyledContainer>

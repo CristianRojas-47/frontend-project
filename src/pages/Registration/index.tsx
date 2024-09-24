@@ -1,3 +1,4 @@
+// Import styled components and necessary icons for the registration form
 import {
   StyledbuttonB,
   StyledCard,
@@ -9,6 +10,7 @@ import {
 } from "./styles";
 import { MdAccountCircle } from "react-icons/md";
 
+// Registration component renders a user registration form
 function Registration() {
   return (
     <>

@@ -1,3 +1,4 @@
+// Import styled components and necessary icons for the login form
 import watchingTv from "../../assets/watchingTv.jpg";
 import {
   StyledbuttonA,
@@ -15,6 +16,7 @@ import {
 } from "./styles";
 import { MdMovieFilter } from "react-icons/md";
 
+// Login component renders a user login form
 function Login() {
   return (
     <>

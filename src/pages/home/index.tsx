@@ -9,9 +9,12 @@ import {
 } from "./styles";
 import { Movie } from "./utils";
 
+// Home component displays a list of movies fetched from the MovieDB API
 function Home() {
+  // State to store the list of movies
   const [movies, setMovies] = useState<Movie[]>([]);
 
+  // Fetch movies when the component mounts and update the state
   useEffect(() => {
     moviesRequest("discover/movie").then((data) => {
       setMovies(data);
@@ -19,6 +22,7 @@ function Home() {
   }, []);
 
   return (
+    // Render a list of movies with links to their detail pages
     <StyledUl>
       {movies.map((movie) => (
         <StyledLi key={movie.id}>
