@@ -22,7 +22,7 @@ const StyledLi = styled.li`
 `;
 
 const StyledImg = styled.img`
-  background-color: azure;
+  background-color: #aaa;
   border-radius: 12px;
   box-shadow: 2px 2px 4px #343434;
   width: 230px;

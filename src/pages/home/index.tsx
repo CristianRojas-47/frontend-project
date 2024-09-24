@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { moviesRequest } from "../../service/request";
-import { Movie } from "./utils";
+import { moviesRequest } from "../../service/moviesRequest";
 import {
   StyledImg,
   StyledLi,
-  StyledUl,
   StyledLink,
   StyledName,
+  StyledUl,
 } from "./styles";
+import { Movie } from "./utils";
 
 function Home() {
   const [movies, setMovies] = useState<Movie[]>([]);
