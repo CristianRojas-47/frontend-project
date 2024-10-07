@@ -13,10 +13,8 @@ import { Details } from "./pages/details";
 import { UserManagement } from "./pages/administration";
 import { Comments } from "./pages/comments";
 import { Registration } from "./pages/Registration";
-import PrivateRoute from "./privateRoute";
-import { AuthProvider } from "./authContext";
 
-// Array de enlaces de navegación para el layout
+// Array of header links to be used in the Layout for navigation
 const headerLinks = [
   { label: "Home", to: "/" },
   { label: "Contacto", to: "/contact" },
@@ -26,50 +24,31 @@ const headerLinks = [
   { label: "Administración", to: "/administration" },
 ];
 
+// Router configuration using React Router
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Layout links={headerLinks} />}>
-        <Route
-          path="/"
-          element={
-            <PrivateRoute>
-              <Home />
-            </PrivateRoute>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/administration" element={<UserManagement />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/comments" element={<Comments />} />
-        <Route
-          path="/movies/:movieId"
-          element={
-            <PrivateRoute>
-              <Details />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/administration"
-          element={
-            <PrivateRoute>
-              <UserManagement />
-            </PrivateRoute>
-          }
-        />
+        <Route path="/administration" element={<UserManagement />} />
+        <Route path="/movies/:movieId" element={<Details />} />
       </Route>
     </>
   )
 );
 
-// Componente principal de la aplicación
+// Main application component
 function App() {
   return (
-    <AuthProvider>
+    <>
       <GlobalStyles />
       <RouterProvider router={router} />
-    </AuthProvider>
+    </>
   );
 }
 
