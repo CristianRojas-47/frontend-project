@@ -73,6 +73,7 @@ const StyledContainerButtons = styled.div`
   justify-content: flex-end;
   gap: 12px;
   width: 80%;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -113,13 +114,14 @@ const StyledbuttonB = styled.button`
 
 const StyledForm = styled.form`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 `;
 
 const StyledContainerInput = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 8px 0;
 `;
 
 const StyledInput = styled.input`
